@@ -1,1 +1,462 @@
 <% provide :title, t("static_pages.home") %>
+<div class="row">
+    <body>
+        <!-- Header -->
+        <div id="frg-header">
+            <div id="frg-top">
+                <div class="frg-top">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="nav nav-pills pull-left">
+                                <li><%= link_to t("home.schedule") ,"#" %></li>
+                                <li><%= link_to t("home.germany") ,"#" %></li>
+                                <li><%= link_to t("home.france") ,"#" %></li>
+                                <li><%= link_to t("home.live_score") ,"#" %></li>
+                            </ul>
+                            <p class="pull-right"><%= t "home.ffn" %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="frg-banner">
+                <div class="frg-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="pull-left">
+                                <img src="images/logo-bongda24h.png" alt="">
+                            </div>
+                            <div class="frg-banner-ads pull-right">
+                                <a href="#"><img src="https://placehold.it/700x83" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="frg-menu">
+                <div class="frg-menu">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="nav navbar nav-pills">
+                                <li><i class="fa fa-home fa-lg"></i></li>
+                                <li><%= link_to t("home.hot_news") %></li>
+                                <li><%= link_to t("home.world_cup") %></li>
+                                <li><%= link_to t("home.euro") %></li>
+                                <li><%= link_to t("home.copa_american"), class: "fa fa-caret-down" %>
+                                    <ul>
+                                 		<li><%= link_to t("home.brazil") %></li>
+                                 		<li><%= link_to t("home.argentina") %></li>
+                                    </ul>
+                                </li>
+                                <li><%= link_to t("home.transfer") %></li>
+
+                                <li><%= link_to t("home.england"), "#", class: "fa fa-caret-down" %></a>
+                                    <ul>
+                                        <li><%= link_to t("home.mu") %></li>
+                                 		<li><%= link_to t("home.chel") %></li>
+                                    </ul>
+                                </li>
+                                <li><%= link_to t("home.vietnam") %></li>
+                                <li><%= link_to t("home.spain"), "#" %>
+                                </li>
+                                <li><%= link_to t("home.video") %></li>
+                                <li class="pull-right"><%= link_to t("home.on_pitch") %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="frg-team-logo">
+                <div class="container">
+                    <div class="row">
+                        <div class="frg-team-logo">
+                            <a href="#"><img src="assets/images/Arsenal.gif" alt=""></a>
+                            <a href="#"><img src="images/ManCity.jpg" alt=""></a>
+                            <a href="#"><img src="images/Liverpool.jpg" alt=""></a>
+                            <a href="#"><img src="images/Arsenal.png" alt=""></a>
+                            <a href="#"><img src="images/Chelsea.png" alt=""></a>
+                            <a href="#"><img src="images/PSG.png" alt=""></a>
+                            <a href="#"><img src="images/BayernMunich.png" alt=""></a>
+                            <a href="#"><img src="images/Borussia Dortmund.png" alt=""></a>
+                            <a href="#"><img src="images/BarcelonaB.png" alt=""></a>
+                            <a href="#"><img src="images/RealMadrid.png" alt=""></a>
+                            <a href="#"><img src="images/InterMilan.png" alt=""></a>
+                            <a href="#"><img src="images/ACMilan.png" alt=""></a>
+                            <a href="#"><img src="images/Juventus.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="frg-headline">
+                <div class="frg-headline">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="frg-small-title">
+                                    <span>Hot</span>
+                                    <div>
+                                    <marquee behavior="scroll" scrollamount="1" direction="left" width="580">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-circle"></i>Jose Mourinho</a></li>
+                                        <li><a href="#"><i class="fa fa-circle"></i>Louis Van Gaal</a></li>
+                                        <li><a href="#"><i class="fa fa-circle"></i>Ibrahimovic</a></li>
+                                        <li><a href="#"><i class="fa fa-circle"></i>Anthony Martial</a></li>
+                                        <li><a href="#"><i class="fa fa-circle"></i>Jamie Vardy</a></li>
+                                    </ul>
+                                    </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <form class="form-horizontal">
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" name="search" placeholder="Tìm kiếm tùy chỉnh" id="frg-search">
+                                        <span class="input-group-btn"><button class="btn btn-default btn-info" type="submit" ><i class="fa fa-search"></i></button></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End #header -->
+
+        <div id="frg-wrapper">
+            <div class="container">
+                <div id="frg-featured">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="frg-slider">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="https://placehold.it/601x360"></a>
+                                        <div class="caption">
+                                            <h4><a href="#">Diego Simeone: Hãy gọi El Cholo là nhà giả kim</a></h4>
+                                            <p class="frg-tag"><span><a href="#">Real Madrid</a></span><span><a href="#">Aletico Madrid</a></span></p>
+                                            <p class="frg-summary">(Bongda24h) - Diego Simeone chẳng phải vua Midas, El Cholo giống với một nhà giả kim luôn khao khát biến những thứ kim loại tầm thường trở thành vàng.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="https://placehold.it/602x360"></a>
+                                        <div class="caption">
+                                            <h4><a href="#">Aletico Madrid: Từ kẻ nợ nần đến phiên bản 2 của Manchester United</a></h4>
+                                            <p class="frg-tag"><span><a href="#">Manchester United</a></span><span><a href="#">Real Madrid</a></span><span><a href="#">Aletico Madrid</a></span></p>
+                                            <p class="frg-summary">(Bongda24h) - Hai năm trước, Atletico Madrid vẫn còn nợ gần nửa tỉ euro. Nhưng chỉ hai năm sau, họ đang đứng trước một tương lai đầy tươi sáng nhờ học theo cách phát triển xoay trục của Manchester United.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="https://placehold.it/603x360"></a>
+                                        <div class="caption">
+                                            <h4><a href="#">Công Phượng, Xuân Trường “mất tích” trước ngày về Việt Nam</a></h4>
+                                            <p class="frg-tag"><span><a href="#">Việt Nam</a></span><span><a href="#">Aletico Madrid</a></span></p>
+                                            <p class="frg-summary">Sau những màn ra mắt ấn tượng, ở vòng đấu này cả Công Phượng và Xuân Trường đều không được CLB chủ quản ở nước ngoài cho ra sân thi đấu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="https://placehold.it/604x360"></a>
+                                        <div class="caption">
+                                            <h4><a href="#">Messi dính chấn thương nặng trước thềm Copa America 2016</a></h4>
+                                            <p class="frg-tag"><span><a href="#">Messi</a></span><span><a href="#">Copa America</a></span></p>
+                                            <p class="frg-summary">Trong trận giao hữu với Honduras, siêu sao Lionel Messi đã gặp phải một chấn thương lưng khá nặng khiến anh rời sân sớm ở phút 65. Trong trận giao hữu với Honduras, siêu sao Lionel Messi đã gặp phải một chấn thương lưng khá nặng khiến anh rời sân sớm ở phút 65.</p>
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="frg-featured-news">
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li role="presentation" class="active"><a href="#frg-popular-news" aria-controls="frg-popular-news" role="tab" data-toggle="tab">Nổi bật</a></li>
+                                    <li role="presentation"><a href="#frg-lastest-news" aria-controls="frg-lastest-news" role="tab" data-toggle="tab">Mới nhất</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="frg-popular-news">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Atletico Madrid: Từ kẻ nợ nần đến phiên bản 2 của Manchester United</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Hủy đá tập giữa ĐT Việt Nam và U19, HLV Hữu Thắng đôn cầu thủ trẻ lên tuyển</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Messi dính chấn thương nặng trước thềm Copa America 2016</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Công Phượng, Xuân Trường “mất tích” trước ngày về Việt Nam</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Arsenal quyết giành hậu vệ trái hay nhất Bundesliga</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade active" id="frg-lastest-news">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Lịch thi đấu tường thuật bóng đá 28/05</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Hủy đá tập giữa ĐT Việt Nam và U19, HLV Hữu Thắng đôn cầu thủ trẻ lên tuyển</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Hủy đá tập giữa ĐT Việt Nam và U19, HLV Hữu Thắng đôn cầu thủ trẻ lên tuyển</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Hủy đá tập giữa ĐT Việt Nam và U19, HLV Hữu Thắng đôn cầu thủ trẻ lên tuyển</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right"></i>Hủy đá tập giữa ĐT Việt Nam và U19, HLV Hữu Thắng đôn cầu thủ trẻ lên tuyển</a></li>
+                                        </ul>                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="frg-schedule">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="frg-schedule">
+                                <h1><i class="fa fa-soccer-ball-o"></i><%= t "home.schedule" %></h1>
+                                <div class="frg-schedule-daily">
+                                    <h2>Saturday 28th May 2016</h2>
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Start</th>
+                                                <th>Match</th>
+                                                <th>Win</th>
+                                                <th>Draw</th>
+                                                <th>Win</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><i class="fa fa-tv"></i>14:30</td>
+                                                <td>Real Madrid <span>vs</span> Atlético</td>
+                                                <td>5/4</td>
+                                                <td>11/5</td>
+                                                <td>2/1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-tv"></i>14:30</td>
+                                                <td>Real Madrid <span>vs</span> Atlético</td>
+                                                <td>5/4</td>
+                                                <td>11/5</td>
+                                                <td>2/1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-tv"></i>14:30</td>
+                                                <td>Real Madrid <span>vs</span> Atlético</td>
+                                                <td>5/4</td>
+                                                <td>11/5</td>
+                                                <td>2/1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-tv"></i>14:30</td>
+                                                <td>Real Madrid <span>vs</span> Atlético</td>
+                                                <td>5/4</td>
+                                                <td>11/5</td>
+                                                <td>2/1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-tv"></i>14:30</td>
+                                                <td>Real Madrid <span>vs</span> Atlético</td>
+                                                <td>5/4</td>
+                                                <td>11/5</td>
+                                                <td>2/1</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-tv"></i>14:30</td>
+                                                <td>Real Madrid <span>vs</span> Atlético</td>
+                                                <td>5/4</td>
+                                                <td>11/5</td>
+                                                <td>2/1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>More football <a href="#">Any time<i class="fa fa-caret-right"></i></a></p>                             
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="frg-result-rank">
+                                <div class="frg-tabs">
+                                    <ul>
+                                        <li><%= link_to t"home.result" %></li>
+                                        <li><%= link_to t"home.ranking" %></li>
+                                    </ul>
+                                    <div id="frg-result">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <td>FT</td>
+                                                <td>Manchester United <span>1 - 0</span> Barcelona</td>
+                                            </tr>
+                                            <tr>
+                                                <td>FT</td>
+                                                <td>Manchester United <span>1 - 0</span> Barcelona</td>
+                                            </tr>
+                                            <tr>
+                                                <td>FT</td>
+                                                <td>Manchester United <span>1 - 0</span> Barcelona</td>
+                                            </tr>
+                                            <tr>
+                                                <td>FT</td>
+                                                <td>Manchester United <span>1 - 0</span> Barcelona</td>
+                                            </tr>
+                                            <tr>
+                                                <td>FT</td>
+                                                <td>Manchester United <span>1 - 0</span> Barcelona</td>
+                                            </tr>
+                                            <tr>
+                                                <td>FT</td>
+                                                <td>Manchester United <span>1 - 0</span> Barcelona</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div id="frg-rank">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">
+                                                        <select class="form-control">
+                                                            <option>ANH</option>
+                                                            <option>ĐỨC</option>
+                                                            <option>PHÁP</option>
+                                                            <option>TÂY BAN NHA</option>
+                                                            <option>ITALIA</option>
+                                                        </select>
+                                                    </th>
+                                                    <th>Trận</th>
+                                                    <th>Điểm</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Leicester City</td>
+                                                    <td>38</td>
+                                                    <td>81</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="frg-bottom-menu">
+                        <ul class="nav navbar nav-pills">
+                            <li><%= link_to t("static_pages.home") %></li>
+                            <li><%= link_to t("static_pages.help") %></li>
+                            <li><%= link_to t("home.contact") %></li>
+                            <li><%= link_to t("home.site_map") %></li>
+                            <li><%= link_to t("home.on_pitch") %></li>
+
+                        </ul>
+                    </div>
+                    <div class="frg-bottom-info">
+                        <h4><%= t "static_pages.title" %></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</div>
+
