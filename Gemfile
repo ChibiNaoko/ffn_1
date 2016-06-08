@@ -44,6 +44,7 @@ group :test do
   gem "guard-minitest", "2.3.1"
   gem "rspec-rails", "~> 3.4"
   gem "shoulda-matchers", "~> 3.0", require: false
+  gem "shoulda-callback-matchers", "~> 1.1.1"
   gem "database_cleaner", "~> 1.5"
   gem "faker", "~> 1.6.1"
   gem "simplecov", require: false

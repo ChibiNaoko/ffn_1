@@ -5,9 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable,
     :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
-  has_many :comments
-  has_many :replies
-  has_many :bets
+
   enum role: [:admin, :member]
 
   after_save :send_email
